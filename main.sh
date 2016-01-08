@@ -27,7 +27,8 @@ do
 			bash showTables.sh
 			;;
 		* ) echo "what is $REPLY!"
-			echo "pls select one of the above to continue."
+			echo "pls select one to continue."
+			bash main1.sh
 			;;
 	esac
 
