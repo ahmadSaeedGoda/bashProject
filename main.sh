@@ -1,5 +1,5 @@
 #!/bin/bash
-select myvar in createDB renameDB dropDB createTable droptbl renametbl showDatabases showTables addrow selection
+select myvar in createDB renameDB dropDB createTable droptbl renametbl showDatabases showTables addrow selection update
 do
 	case $myvar in
 		createDB )	
@@ -27,10 +27,13 @@ do
 			bash showTables.sh
 			;;
 		addrow )
-			bash addrow.sh $columns
+			bash addrow.sh 
 			;;
 		selection )
 			bash selection.sh
+			;;
+		update )
+			bash update.sh
 			;;
 		* ) echo "what is $REPLY!"
 			echo "pls select one to continue."
